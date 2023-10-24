@@ -1,0 +1,110 @@
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #0c0420;
+    color: #25fc30;
+}
+.logo {
+    font-size: 2em;
+    color: #a3c984;
+    user-select: none;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+   
+}
+
+.generator {
+    width: 100%;
+    max-width: 640px;
+    padding: 2rem 1rem;
+    background-color:transparent;
+    border-radius: 1rem;
+
+}
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+
+}
+input:not([type="checkbox"]),
+button {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: rgb(185, 194, 147);
+}
+input[type="checkbox"]{
+    cursor: pointer;
+}
+.password-wrap{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.password-wrap::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 3px;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    background: linear-gradient(to right,#0fda2a 25%,#aebd07 75%);
+}
+.password-wrap input{
+    flex: 1 1 0%;
+    padding: 0.5rem;
+    color: #282847;
+}
+.password-wrap input::placeholder{
+    color:#151414;
+    font-style: italic;
+}
+.password-wrap button{
+    cursor:pointer;
+    background: linear-gradient(to bottom,#0fda2a 0%,#aebd07 75%);
+
+}
+label{
+    display: flex;
+    white-space: nowrap;
+    user-select: none;
+    margin-bottom: 1rem;
+}
+label span {
+    display: block;
+    flex:1 1 0%;
+    white-space: nowrap;
+}
+label input[type="number"]{
+    text-align: right;
+}
+button[type="submit"]{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #070707;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    background: linear-gradient(to right,#42be15 25%, #adb557 50%);
+    background-size: 200%;
+    transition: 0.3s ease-out;
+}
+button[type="submit"]:hover{
+    background-position: 75%;
+
+}
+
