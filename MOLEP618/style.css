@@ -1,0 +1,102 @@
+*{ 
+	margin:0; 
+	padding:0; 
+	box-sizing: border-box; 
+} 
+
+body{ 
+	min-height:100vh; 
+	transition: 0.5s; 
+	transition-timing-function: ease-in; 
+	background: url("https://static.vecteezy.com/system/resources/previews/006/852/804/non_2x/abstract-blue-background-simple-design-for-your-website-free-vector.jpg")
+} 
+	
+.quote-box{ 
+	padding:3rem; 
+	transition: 0.5s; 
+	transition-timing-function: ease-in; 
+} 
+	
+.text{ 
+	font-size:30px; 
+	padding-left:10px; 
+	transition: 0.5s; 
+	transition-timing-function: ease-in; 
+	font-family: 'Script mt', sans-serif; 
+	background-image: linear-gradient(to right bottom, #080808a8, #031c61a8); 
+	color: transparent; 
+	-webkit-background-clip: text; 
+} 
+
+.quote{ 
+	transition: 0.5s; 
+	transition-timing-function: ease-in; 
+} 
+
+.new-quote{ 
+	font-size:15px; 
+	border-radius: 8px; 
+	cursor:pointer; 
+	padding-bottom: 9px; 
+	padding-top: 9px; 
+	margin-top: 5px; 
+	background-image: linear-gradient(to right bottom, #1d036661, #0a149ea8); 
+} 
+
+.text-center{ 
+	text-align: center; 
+} 
+	
+.new-quote:hover{ 
+	opacity: 0.6; 
+} 
+
+.author{ 
+	margin:10px; 
+	font-size:20px; 
+	transition: 0.5s; 
+	transition-timing-function: ease-in; 
+	font-family: 'Baskerville old face', sans-serif; 
+	background-image: linear-gradient(to right bottom, #0c0d0d,#0a1018
+	); 
+	color: transparent; 
+	-webkit-background-clip: text; 
+} 
+	
+	
+p{ 
+	margin-top: 5px; 
+	text-align: center; 
+	position: absolute; 
+	width: 100%; 
+	top:21.5%; 
+} 
+
+.block { 
+perspective: 150rem; 
+position: absolute; 
+top:25%; 
+left: 27%; 
+} 
+
+.block__main { 
+	min-width: 45vw; 
+	position: absolute; 
+	transition: all .8s ease; 
+	backface-visibility: hidden; 
+	box-shadow: 0rem 1.5rem 4rem rgba(1, 1, 1, 0.095); 
+	border-radius: .5rem; 
+	background-image: linear-gradient(to right bottom, #eeeaf4,#f1dfd1); 
+} 
+
+.block__back { 
+	transform: rotateY(180deg); 
+} 
+
+.rotateF{ 
+transform: rotateY(-180deg); 
+} 
+
+.rotateB{ 
+transform: rotateY(0deg); 
+} 
